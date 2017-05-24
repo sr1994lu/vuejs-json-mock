@@ -26,4 +26,10 @@ const vm = new Vue({
     },
   },
 });
+var footer = new Vue({
+  el: 'footer',
+  data: {
+    footer: 'HAL&Copy;',
+  }
+});
 
