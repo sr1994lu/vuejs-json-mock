@@ -5,9 +5,13 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.5.0"
+    "babel-preset-env": "^1.5.0",
+    "chokidar": "^1.7.0",
+    "forever": "^0.15.3"
   },
   "scripts": {
-    "babe": "rm -rf ./js/* && babel src --out-dir js --source-maps inline"
+    "babe": "rm -rf ./js/* && babel src --out-dir js --source-maps inline",
+    "babe-watch": "forever --silent start  ./scripts/src-watcher.js",
+    "babe-list": "forever list"
   }
 }

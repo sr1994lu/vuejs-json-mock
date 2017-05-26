@@ -7,7 +7,7 @@ services:
     volumes:
       - ./app:/usr/src
     working_dir: /usr/src
-    command: bash -c "yarn install && bash"
+    command: bash -c "yarn install && yarn run babe-watch && yarn run babe-list && bash"
   express:
     image: sr1994lu/bazel:latest
     container_name: "express"
