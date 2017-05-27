@@ -2,7 +2,4 @@
 
 `docker-compose up -d --build`
 
-- [ ] コード書いたら何も考えずbabeってください
-
-`cd app`
-`npm run babe`
+- [ ] `app/src/`で作業してね
