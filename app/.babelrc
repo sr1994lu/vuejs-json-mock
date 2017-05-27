@@ -1,16 +1,21 @@
 {
   "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": [
-            "> 1% in JP"
-          ]
-        },
-        "modules": false,
-        "loose": false
-      }
-    ]
-  ]
+    ["env", {"modules": false}],
+    "stage-2",
+    "flow"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-class-properties"
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2", "flow"],
+      "plugins": [
+        "istanbul",
+        "transform-class-properties"
+      ]
+    }
+  }
 }
